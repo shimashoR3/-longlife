@@ -1,0 +1,123 @@
+ <!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/recipe1.css">
+    <script>
+        function URLClick() {
+            window.open = cordova.InAppBrowser.open;
+            window.open("https://onl.la/6cmEgrm", "_system", 'location=yes');
+        }
+
+        window.onload = function () {
+            var nav = document.getElementById('nav-wrapper');
+            var hamburger = document.getElementById('js-hamburger');
+            var blackBg = document.getElementById('js-black-bg');
+
+            hamburger.addEventListener('click', function () {
+                nav.classList.toggle('open');
+            });
+            blackBg.addEventListener('click', function () {
+                nav.classList.remove('open');
+            });
+        };
+    </script>
+</head>
+<body>
+    <div>
+        <div class="name1">
+                <p style="text-align:center">キャベツチャーハン（２人分）</p>
+        </div>
+        <input class="picture1" type="image" src="1.jpg" alt="キャベツチャーハン">
+    </div>
+
+    <div class="zairyo">材料・分量</div>
+        <table class="zairyo1">
+        <tr>
+            <th bgcolor="#79c06e">材料</th>
+            <th bgcolor="#79c06e">分量</th>
+        </tr>
+        <tr>
+            <td bgcolor="#badcad">温かいご飯</td>
+            <td bgcolor="#badcad">300g</td>
+        </tr>
+        <tr>
+            <td>キャベツ</td>
+            <td>300g</td>
+        </tr>
+        <tr>
+            <td bgcolor="#badcad">豚ひき肉</td>
+            <td bgcolor="#badcad">80g</td>
+        </tr>
+        <tr>
+            <td>塩</td>
+            <td>小さじ1/2</td>
+        </tr>
+        <tr>
+            <td bgcolor="#badcad">こしょう</td>
+            <td bgcolor="#badcad">少々</td>
+        </tr>
+        <tr>
+            <td>鶏がらスープの素</td>
+            <td>小さじ2</td>
+        </tr>
+        <tr>
+            <td bgcolor="#badcad">ねぎのみじん切り</td>
+            <td bgcolor="#badcad">大さじ3</td>
+        </tr>
+        <tr>
+            <td>酒</td>
+            <td>大さじ1</td>
+        </tr>
+        <tr>
+            <td bgcolor="#badcad">サラダ油</td>
+            <td bgcolor="#badcad">大さじ1・1/2</td>
+        </tr>
+        </table>
+
+    <div class="howto">作り方</div>
+    <div class="howto1">
+         <p style="text-align:left">①<br>キャベツは芯の部分は薄切りにして、葉の部分とともに１．５ｃｍ角に切る。<br><br>②<br>フライパンに油大さじ１を強火で熱し、①のキャベツをサッと炒めて、塩小さじ１／４、鶏ガラスープの素小さじ１をふり、全体に油がなじむまで炒めて取り出す。<br><br>③<br>フライパンをサッと拭き、油大さじ１／２を中火で熱し、ひき肉を入れてほぐすようにして炒め、肉の色が変わったら、ねぎ、ご飯を加え、強火でほぐすように炒める。<br><br>④<br>鶏ガラスープの素小さじ１、酒をふり、塩小さじ１／４・こしょうで味を調え、②のキャベツを水気が入らないように戻し入れて炒め合わせる。</p>
+    </div>
+
+    <div class="energy">栄養情報（１人分）</div>
+    <div class="energy1">
+        <p>エネルギー　：443kcal<br>たんぱく質　：13g<br>塩分　：2.3g<br>野菜摂取量　：140g<br>※野菜摂取量はきのこ類・いも類を除く</p>
+    </div>
+
+    <div class="kouka">効果</div>
+        <div class="kouka1">
+            <p>【キャベツ】<br>・ビタミンC・食物繊維<br>→免疫力を高め、血液がどろどろになるのを防ぐ効果がある</p>
+        </div>
+
+    <div class="sansyo">参照</div>
+        <div class="sansyo1">
+            <p>AJINOMOTO PARK<br><a href="https://onl.la/6cmEgrm" target="_blank" rel="noopener noreferrer">https://onl.la/6cmEgrm</a></p>
+        </div>
+    
+    <div class="under"></div>
+
+    <div class="background-top"></div>
+
+    <div id="nav-wrapper" class="nav-wrapper">
+    <div class="hamburger" id="js-hamburger">
+        <span class="hamburger__line hamburger__line--1"></span>
+        <span class="hamburger__line hamburger__line--2"></span>
+        <span class="hamburger__line hamburger__line--3"></span>
+    </div>
+    <nav class="sp-nav">
+        <ul>
+        <li onclick="location.href='home.html'">ホーム</li>
+        <li onclick="location.href='BMI.html'">BMI測定</li>
+        <li onclick="location.href='check.html'">生活習慣病チェックシート</li>
+        </ul>
+    </nav>
+    <div class="black-bg" id="js-black-bg"></div>
+    </div>
+    <button class="back" href="javascript:void(0)" onclick="history.back()">戻る</button>
+</body>
+</html>

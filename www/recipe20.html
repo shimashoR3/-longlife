@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/recipe20.css">
+    <script>
+        function URLClick() {
+            window.open = cordova.InAppBrowser.open;
+            window.open("https://onl.la/6cmEgrm", "_system", 'location=yes');
+        }
+
+        window.onload = function () {
+            var nav = document.getElementById('nav-wrapper');
+            var hamburger = document.getElementById('js-hamburger');
+            var blackBg = document.getElementById('js-black-bg');
+
+            hamburger.addEventListener('click', function () {
+                nav.classList.toggle('open');
+            });
+            blackBg.addEventListener('click', function () {
+                nav.classList.remove('open');
+            });
+        };
+    </script>
+</head>
+<body>
+    <div>
+        <div class="name1">
+                <p style="text-align:center">オクラともずくのネバネバスープ（２人分）</p>
+        </div>
+        <input class="picture1" type="image" src="20.JPG" alt="オクラともずくのネバネバスープ">
+    </div>
+
+    <div class="zairyo">材料・分量</div>
+    <table class="zairyo1">
+        <tr>
+            <th bgcolor="#79c06e">材料</th>
+            <th bgcolor="#79c06e">分量</th>
+        </tr>
+        <tr>
+            <td bgcolor="#badcad">オクラ</td>
+            <td bgcolor="#badcad">6本（60g）</td>
+        </tr>
+        <tr>
+            <td>もずく</td>
+            <td>50g</td>
+        </tr>
+        <tr>
+            <td bgcolor="#badcad">えのきだけ</td>
+            <td bgcolor="#badcad">1/2袋（50g）</td>
+        </tr>
+        <tr>
+            <td>◆水</td>
+            <td>1・1/2カップ</td>
+        </tr>
+        <tr>
+            <td bgcolor="#badcad">◆鶏がらスープの素</td>
+            <td bgcolor="#badcad">小さじ1</td>
+        </tr>
+        <tr>
+            <td>塩</td>
+            <td>少々</td>
+        </tr>
+        </table>
+
+    <div class="howto">作り方</div>
+    <div class="howto1">
+         <p style="text-align:left">①<br>オクラはガクを切り、５ｍｍ幅の輪切りにする。えのきだけは長さを半分に切る。<br><br>②<br>鍋に◆、①のオクラ・えのきだけ、もずくを入れて温め、塩で味を調える。</p>
+    </div>
+
+    <div class="energy">栄養情報（１人分）</div>
+    <div class="energy1">
+        <p>エネルギー　18kcal<br>たんぱく質　：1.3g<br>塩分　：0.5g<br>野菜摂取量　：26g<br>※野菜摂取量はきのこ類・いも類を除く</p>
+    </div>
+
+    <div class="kouka">効果</div>
+        <div class="kouka1">
+            <p>【オクラ】<br>・β‐カロテン・葉酸・カリウム・食物繊維<br>→免疫力の維持、高血圧の予防、コレステロールの吸収の抑制に効果がある<br><br>【もずく】<br>・β‐カロテン・フコイダン<br>→動脈硬化、がん、糖尿病、高血圧の予防に効果がある</p>
+        </div>
+
+    <div class="sansyo">参照</div>
+        <div class="sansyo1">
+            <p>AJINOMOTO PARK<br><a href="https://x.gd/HUQsA" target="_blank" rel="noopener noreferrer">https://x.gd/HUQsA</a></p>
+        </div>
+    
+    <div class="under"></div>
+
+    <div class="background-top"></div>
+
+    <div id="nav-wrapper" class="nav-wrapper">
+    <div class="hamburger" id="js-hamburger">
+        <span class="hamburger__line hamburger__line--1"></span>
+        <span class="hamburger__line hamburger__line--2"></span>
+        <span class="hamburger__line hamburger__line--3"></span>
+    </div>
+    <nav class="sp-nav">
+        <ul>
+        <li onclick="location.href='home.html'">ホーム</li>
+        <li onclick="location.href='BMI.html'">BMI測定</li>
+        <li onclick="location.href='check.html'">生活習慣病チェックシート</li>
+        </ul>
+    </nav>
+    <div class="black-bg" id="js-black-bg"></div>
+    </div>
+    <button class="back" href="javascript:void(0)" onclick="history.back()">戻る</button>
+</body>
+</html>

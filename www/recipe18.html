@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/recipe18.css">
+    <script>
+        function URLClick() {
+            window.open = cordova.InAppBrowser.open;
+            window.open("https://onl.la/6cmEgrm", "_system", 'location=yes');
+        }
+
+        window.onload = function () {
+            var nav = document.getElementById('nav-wrapper');
+            var hamburger = document.getElementById('js-hamburger');
+            var blackBg = document.getElementById('js-black-bg');
+
+            hamburger.addEventListener('click', function () {
+                nav.classList.toggle('open');
+            });
+            blackBg.addEventListener('click', function () {
+                nav.classList.remove('open');
+            });
+        };
+    </script>
+</head>
+<body>
+    <div>
+        <div class="name1">
+                <p style="text-align:center">ねぎとささみの中華スープ（４人分）</p>
+        </div>
+        <input class="picture1" type="image" src="19.PNG" alt="ねぎとささみの中華スープ">
+    </div>
+
+    <div class="zairyo">材料・分量</div>
+    <table class="zairyo1">
+        <tr>
+            <th bgcolor="#79c06e">材料</th>
+            <th bgcolor="#79c06e">分量</th>
+        </tr>
+        <tr>
+            <td bgcolor="#badcad">ねぎ</td>
+            <td bgcolor="#badcad">1本（100g）</td>
+        </tr>
+        <tr>
+            <td>◆鶏ささみ</td>
+            <td>2本（200g）</td>
+        </tr>
+        <tr>
+            <td bgcolor="#badcad">◆塩</td>
+            <td bgcolor="#badcad">ふたつまみ（0.5g）</td>
+        </tr>
+        <tr>
+            <td>◆片栗粉</td>
+            <td>適量</td>
+        </tr>
+        <tr>
+            <td bgcolor="#badcad">鶏がらスープの素</td>
+            <td bgcolor="#badcad">大さじ1と1/3</td>
+        </tr>
+        <tr>
+            <td>水</td>
+            <td>700ml</td>
+        </tr>
+        <tr>
+            <td bgcolor="#badcad">おろししょうが</td>
+            <td bgcolor="#badcad">お好み</td>
+        </tr>
+        </table>
+
+    <div class="howto">作り方</div>
+    <div class="howto1">
+         <p style="text-align:left">①<br>ねぎは斜めに薄切りにする。<br><br>②<br>鶏ささみは筋を取り、そぎ切りにする。<br><br>③<br>②のささみに、塩と片栗粉をまぶしておく。<br><br>④<br>鍋に水を入れ、沸いたら③のささみをくっつかないように加えて、火を通す。<br><br>⑤<br>アクを取る。<br><br>⑥<br>①のねぎを加えて、ひと煮立ちさせる。<br><br>⑦<br>鶏ガラスープの素とおろししょうがを加え、火を止める。</p>
+    </div>
+
+    <div class="energy">栄養情報（１人分）</div>
+    <div class="energy1">
+        <p>エネルギー　71kcal<br>たんぱく質　：12.6g<br>塩分　：0.8g<br>脂質　：0.6g<br>炭水化物　：3.3g<br>食物繊維　：0.6g<br>ビタミンB1　：0.06mg<br>ビタミンB2　：0.07mg<br>カルシウム　：12㎎<br>鉄　：0.4㎎</p>
+    </div>
+
+    <div class="kouka">効果</div>
+        <div class="kouka1">
+            <p>【ねぎ】<br>・ビタミンC・β-カロテン・カリウム<br>→がん、血管疾患、老化、高血圧の予防に効果がある<br><br>【鶏肉】<br>・不飽和脂肪酸・ステアリン酸<br>→コレステロールを減少させ、善玉コレステロールの生成を助ける効果がある</p>
+        </div>
+
+    <div class="sansyo">参照</div>
+        <div class="sansyo1">
+            <p>岐阜県栄養士会<br><a href="https://x.gd/5Ho54" target="_blank" rel="noopener noreferrer">https://x.gd/5Ho54</a></p>
+        </div>
+    
+    <div class="under"></div>
+
+    <div class="background-top"></div>
+
+    <div id="nav-wrapper" class="nav-wrapper">
+    <div class="hamburger" id="js-hamburger">
+        <span class="hamburger__line hamburger__line--1"></span>
+        <span class="hamburger__line hamburger__line--2"></span>
+        <span class="hamburger__line hamburger__line--3"></span>
+    </div>
+    <nav class="sp-nav">
+        <ul>
+        <li onclick="location.href='home.html'">ホーム</li>
+        <li onclick="location.href='BMI.html'">BMI測定</li>
+        <li onclick="location.href='check.html'">生活習慣病チェックシート</li>
+        </ul>
+    </nav>
+    <div class="black-bg" id="js-black-bg"></div>
+    </div>
+    <button class="back" href="javascript:void(0)" onclick="history.back()">戻る</button>
+</body>
+</html>

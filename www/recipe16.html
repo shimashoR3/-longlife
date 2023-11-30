@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/recipe16.css">
+    <script>
+        function URLClick() {
+            window.open = cordova.InAppBrowser.open;
+            window.open("https://onl.la/6cmEgrm", "_system", 'location=yes');
+        }
+
+        window.onload = function () {
+            var nav = document.getElementById('nav-wrapper');
+            var hamburger = document.getElementById('js-hamburger');
+            var blackBg = document.getElementById('js-black-bg');
+
+            hamburger.addEventListener('click', function () {
+                nav.classList.toggle('open');
+            });
+            blackBg.addEventListener('click', function () {
+                nav.classList.remove('open');
+            });
+        };
+    </script>
+</head>
+<body>
+    <div>
+        <div class="name1">
+                <p style="text-align:center">なすと豚肉のレンジ蒸し（２人分）</p>
+        </div>
+        <input class="picture1" type="image" src="16.PNG" alt="なすと豚肉のレンジ蒸し">
+    </div>
+
+    <div class="zairyo">材料・分量</div>
+    <table class="zairyo1">
+        <tr>
+            <th bgcolor="#79c06e">材料</th>
+            <th bgcolor="#79c06e">分量</th>
+        </tr>
+        <tr>
+            <td bgcolor="#badcad">なす</td>
+            <td bgcolor="#badcad">2本（200g）</td>
+        </tr>
+        <tr>
+            <td>豚薄切り肉</td>
+            <td>100g</td>
+        </tr>
+        <tr>
+            <td bgcolor="#badcad">◆ポン酢</td>
+            <td bgcolor="#badcad">大さじ2</td>
+        </tr>
+        <tr>
+            <td>◆酢</td>
+            <td>大さじ1</td>
+        </tr>
+        <tr>
+            <td bgcolor="#badcad">◆にんにく（すりおろし）</td>
+            <td bgcolor="#badcad">小さじ1</td>
+        </tr>
+        <tr>
+            <td>大葉</td>
+            <td>お好み</td>
+        </tr>
+        </table>
+
+    <div class="howto">作り方</div>
+    <div class="howto1">
+         <p style="text-align:left">①<br>なすは斜め薄切りにし、サッと水にさらす。<br><br>②<br>豚肉は食べやすい大きさに切る。<br><br>③<br>ポン酢・酢・すりおろしにんにくを混ぜてタレを作る。<br><br>④<br>耐熱皿になすと豚肉を交互に重ね、ラップをする。<br><br>⑤<br>電子レンジ600Wで、2～3分加熱する。<br><br>⑥<br>千切りした大葉をのせ、タレをかける。</p>
+    </div>
+
+    <div class="energy">栄養情報（１人分）</div>
+    <div class="energy1">
+        <p>エネルギー　170kcal<br>たんぱく質　：11.7g<br>塩分　：1.5g<br>脂質　：9.7g<br>炭水化物　：8.3g<br>食物繊維　：2.4g<br>ビタミンB1　：0.40㎎<br>ビタミンB2　：0.13㎎<br>カルシウム　：23㎎<br>鉄　：0.5㎎</p>
+    </div>
+
+    <div class="kouka">効果</div>
+        <div class="kouka1">
+            <p>【なす】<br>・カリウム・ナスニン・食物繊維<br>→高血圧、がん、心筋梗塞、糖尿病の予防や免疫力の向上に役立つ<br><br>【豚肉】<br>・オレイン酸・ステアリン酸<br>→がん、動脈硬化の予防に役立つ</p>
+        </div>
+
+    <div class="sansyo">参照</div>
+        <div class="sansyo1">
+            <p>岐阜県栄養士会<br><a href="https://x.gd/gRTFF" target="_blank" rel="noopener noreferrer">https://x.gd/gRTFF</a></p>
+        </div>
+    
+    <div class="under"></div>
+
+    <div class="background-top"></div>
+
+    <div id="nav-wrapper" class="nav-wrapper">
+    <div class="hamburger" id="js-hamburger">
+        <span class="hamburger__line hamburger__line--1"></span>
+        <span class="hamburger__line hamburger__line--2"></span>
+        <span class="hamburger__line hamburger__line--3"></span>
+    </div>
+    <nav class="sp-nav">
+        <ul>
+        <li onclick="location.href='home.html'">ホーム</li>
+        <li onclick="location.href='BMI.html'">BMI測定</li>
+        <li onclick="location.href='check.html'">生活習慣病チェックシート</li>
+        </ul>
+    </nav>
+    <div class="black-bg" id="js-black-bg"></div>
+    </div>
+    <button class="back" href="javascript:void(0)" onclick="history.back()">戻る</button>
+</body>
+</html>
