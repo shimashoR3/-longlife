@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/check.css">
+    <style>
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        function getScore(){
+
+        //チェックボックスの値を取得する
+        var values = [];
+        $("input[name='check']").each(function() {
+            if ($(this).is(":checked")) {
+                values.push($(this).attr("value"));
+            }
+        });
+
+        //合計点数を計算する
+        var score = 0;
+        for (var value of values){
+            if (value) {
+                score += parseInt(value);
+            }
+        }
+
+        //合計点数を表示する
+        $("#score").text("合計点数：" + score);
+        }
+
+        window.onload = function () {
+            var nav = document.getElementById('nav-wrapper');
+            var hamburger = document.getElementById('js-hamburger');
+            var blackBg = document.getElementById('js-black-bg');
+
+            hamburger.addEventListener('click', function () {
+                nav.classList.toggle('open');
+            });
+            blackBg.addEventListener('click', function () {
+                nav.classList.remove('open');
+            });
+        };
+    </script>
+</head>
+<body>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    <div class="name1">
+        <p style="text-align:center">生活習慣病チェックシート</p>
+    </div>
+    <div class="name2">
+        <p style="text-align:center">食生活について</p>
+    </div>
+    <form action="#">
+        <input type="checkbox" class="check1-1" style="margin-top:210px" name="check" value="1">毎食、ついおなかいっぱい食べてしまう。
+        <br>
+        <input type="checkbox" class="check1-2" style="margin-top:10px" name="check" value="1">味の濃いものやインスタント食品が好き。
+        <br>
+        <input type="checkbox" class="check1-3" style="margin-top:10px" name="check" value="1">野菜料理はどちらかというと苦手だ。
+        <br>
+        <input type="checkbox" class="check1-4" style="margin-top:10px" name="check" value="1">魚料理より肉料理が好き。
+        <br>
+        <input type="checkbox" class="check1-5" style="margin-top:10px" name="check" value="1">朝食はあまり食べない。
+        <br>
+        <input type="checkbox" class="check1-6" style="margin-top:10px" name="check" value="1">食事は外食や市販の弁当が多い。
+        <br>
+        <input type="checkbox" class="check1-7" style="margin-top:10px" name="check" value="1">夜10時以降に夕食や夜食を食べる。
+        <br>
+        <input type="checkbox" class="check1-8" style="margin-top:10px" name="check" value="1">食事はひとりで食べることが多い。
+        <br>
+        <input type="checkbox" class="check1-9" style="margin-top:10px" name="check" value="1">ほぼ毎日、間食をする。
+        <br>
+        <input type="checkbox" class="check1-10" style="margin-top:10px" name="check" value="1">休憩時間には、お茶より砂糖入りコーヒー、ジュースなど甘い飲み物を飲むことが多い。
+        <br>
+        <div class="name3">
+            <p style="text-align:center">運動習慣について</p>
+        </div>
+        <input type="checkbox" class="check2-1" style="margin-top:75px" name="check" value="1">自分は運動不足だと思う。
+        <br>
+        <input type="checkbox" class="check2-2" style="margin-top:10px" name="check" value="1">歩くよりは車や自転車を利用する。
+        <br>
+        <input type="checkbox" class="check2-3" style="margin-top:10px" name="check" value="1">エスカレーター、エレベーターは必ず使う。
+        <br>
+        <input type="checkbox" class="check2-4" style="margin-top:10px" name="check" value="1">バスや電車はできるだけ座る。
+        <br>
+        <input type="checkbox" class="check2-5" style="margin-top:10px" name="check" value="1">体のこりや硬さを感じることがある。
+        <br>
+        <input type="checkbox" class="check2-6" style="margin-top:10px" name="check" value="1">仕事はデスクワーク中心だ。
+        <br>
+        <input type="checkbox" class="check2-7" style="margin-top:10px" name="check" value="1">家事はできるだけやりたくない。
+        <br>
+        <input type="checkbox" class="check2-8" style="margin-top:10px" name="check" value="1">とくに定期的な運動は行っていない。
+        <br>
+        <input type="checkbox" class="check2-9" style="margin-top:10px" name="check" value="1">どちらかといえばインドア派だ。
+        <br>
+        <input type="checkbox" class="check2-10" style="margin-top:10px" name="check" value="1">休日は家でゴロゴロすることが多い。
+        <br>
+        <div class="name4">
+            <p style="text-align:center">休養・ストレスについて</p>
+        </div>
+        <input type="checkbox" class="check3-1" style="margin-top:70px" name="check" value="1">毎日忙しい（残業も多い）。
+        <br>
+        <input type="checkbox" class="check3-2" style="margin-top:10px" name="check" value="1">どちらかというと几帳面なほうだ。
+        <br>
+        <input type="checkbox" class="check3-3" style="margin-top:10px" name="check" value="1">睡眠不足が続いている。
+        <br>
+        <input type="checkbox" class="check3-4" style="margin-top:10px" name="check" value="1">最近、イライラすることが多い。
+        <br>
+        <input type="checkbox" class="check3-5" style="margin-top:10px" name="check" value="1">家族関係や仕事で悩みがある。
+        <br>
+        <input type="checkbox" class="check3-6" style="margin-top:10px" name="check" value="1">物事に熱中しやすいほうだ。
+        <br>
+        <input type="checkbox" class="check3-7" style="margin-top:10px" name="check" value="1">引越しや転勤、異動などで環境が変わった。
+        <br>
+        <input type="checkbox" class="check3-8" style="margin-top:10px" name="check" value="1">朝から疲れを感じることがある。
+        <br>
+        <input type="checkbox" class="check3-9" style="margin-top:10px" name="check" value="1">湯船に浸からずシャワーで済ませている。
+        <br>
+        <input type="checkbox" class="check3-10" style="margin-top:10px" name="check" value="1">自分だけの時間がなかなか確保できない。
+        <br>
+        <div class="name5">
+            <p style="text-align:center">飲酒・喫煙について</p>
+        </div>
+        <input type="checkbox" class="check4-1" style="margin-top:70px" name="check" value="1">ほぼ毎日お酒を飲む。
+        <br>
+        <input type="checkbox" class="check4-2" style="margin-top:10px" name="check" value="1">夜12時を過ぎても飲んでいることがある。
+        <br>
+        <input type="checkbox" class="check4-3" style="margin-top:10px" name="check" value="1">何も食べずに飲むほうだ。
+        <br>
+        <input type="checkbox" class="check4-4" style="margin-top:10px" name="check" value="1">ストレス解消にはお酒が一番。
+        <br>
+        <input type="checkbox" class="check4-5" style="margin-top:10px" name="check" value="1">仕事上、飲まなければいけないことが多い。
+        <br>
+        <input type="checkbox" class="check4-6" style="margin-top:10px" name="check" value="1">１日の平均飲酒量は、日本酒１合（ビールなら中ビン１本、酎ハイ３５０ｍＬ、ワイングラス２杯）以上だ。
+        <br>
+        <input type="checkbox" class="check4-7" style="margin-top:10px" name="check" value="1">たばこ（電子たばこを含む）を吸う。
+        <br>
+        <input type="checkbox" class="check4-8" style="margin-top:10px" name="check" value="1">イライラするとたばこの本数が増える。
+        <br>
+        <input type="checkbox" class="check4-9" style="margin-top:10px" name="check" value="1">仕事中、たばこ（電子たばこを含む）を吸っている。
+        <br>
+        <input type="checkbox" class="check4-10" style="margin-top:10px" name="check" value="1">自分は吸わないが周囲に喫煙者が多い。
+        <br>
+        <input type="button" value="合計点数を表示" onclick="getScore()">
+
+        <p id="score" class="score">合計点数:0</p>
+    </form>
+    <div class="name6">
+            <p style="text-align:center">総合判定</p>
+    </div>
+    <table class="hantei1">
+        <tr>
+            <th bgcolor="#79c06e">点数</th>
+            <th bgcolor="#79c06e">コメント</th>
+        </tr>
+        <tr>
+            <td bgcolor="#badcad">31点以上</td>
+            <td bgcolor="#badcad">いますぐ生活改善を始めましょう！<br>このままでは生活習慣病にかかる確率がかなり高くなってしまいます。</td>
+        </tr>
+        <tr>
+            <td>21～30点</td>
+            <td>気を引き締めて生活改善を！<br>あまりよくない生活習慣です。今日から気を引き締めて生活改善を始めましょう。</td>
+        </tr>
+        <tr>
+            <td bgcolor="#badcad">11～20点</td>
+            <td bgcolor="#badcad">いまならまだ間にあう！<br>忙しいから、面倒だからと自分のライフスタイル、健康に対する配慮が欠けていませんか？まずはできるところから改善していきましょう。</td>
+        </tr>
+        <tr>
+            <td>0～10点</td>
+            <td>油断は禁物！<br>今のところはまずまずの生活を送っています。でも、とくにチェック数の多かった項目はありませんでしたか？自分のウィークポイントを改善し、より健康な生活を送りましょう。</td>
+        </tr>
+        </table>
+        <div class="under"></div>
+
+    <div class="background-top"></div>
+    <div id="nav-wrapper" class="nav-wrapper">
+    <div class="hamburger" id="js-hamburger">
+        <span class="hamburger__line hamburger__line--1"></span>
+        <span class="hamburger__line hamburger__line--2"></span>
+        <span class="hamburger__line hamburger__line--3"></span>
+    </div>
+    <nav class="sp-nav">
+        <ul>
+        <li onclick="location.href='home.html'">ホーム</li>
+        <li onclick="location.href='BMI.html'">BMI測定</li>
+        <li onclick="location.href='check.html'">生活習慣病チェックシート</li>
+        </ul>
+    </nav>
+    <div class="black-bg" id="js-black-bg"></div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+img {
+   position: fixed;
+    top: 100px;
+    left: 15%;
+    width:70%;
+    height: auto;
+    text-align: center;
+}
+.class2 {
+    position: fixed;
+    top: 250px;
+    left: 5%;
+    text-align: center;
+    width: 90%;
+    height: auto;
+}
