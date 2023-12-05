@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/recipe7.css">
+    <script>
+        function URLClick() {
+            window.open = cordova.InAppBrowser.open;
+            window.open("https://onl.la/6cmEgrm", "_system", 'location=yes');
+        }
+
+        window.onload = function () {
+            var nav = document.getElementById('nav-wrapper');
+            var hamburger = document.getElementById('js-hamburger');
+            var blackBg = document.getElementById('js-black-bg');
+
+            hamburger.addEventListener('click', function () {
+                nav.classList.toggle('open');
+            });
+            blackBg.addEventListener('click', function () {
+                nav.classList.remove('open');
+            });
+        };
+    </script>
+</head>
+<body>
+    <div>
+        <div class="name1">
+                <p style="text-align:center">キャベツと卵の炒めもの（２人分）</p>
+        </div>
+        <input class="picture1" type="image" src="7.JPG" alt="キャベツと卵の炒めもの">
+    </div>
+
+    <div class="zairyo">材料・分量</div>
+    <table class="zairyo1">
+        <tr>
+            <th bgcolor="#79c06e">材料</th>
+            <th bgcolor="#79c06e">分量</th>
+        </tr>
+        <tr>
+            <td bgcolor="#badcad">キャベツ</td>
+            <td  bgcolor="#badcad">250g</td>
+        </tr>
+        <tr>
+            <td>卵</td>
+            <td>2個</td>
+        </tr>
+        <tr>
+            <td  bgcolor="#badcad">ぬるま湯</td>
+            <td  bgcolor="#badcad">大さじ1</td>
+        </tr>
+        <tr>
+            <td>コンソメ（顆粒タイプ）</td>
+            <td>小さじ1/4</td>
+        </tr>
+        <tr>
+            <td  bgcolor="#badcad">◆ぬるま湯</td>
+            <td  bgcolor="#badcad">大さじ2</td>
+        </tr>
+        <tr>
+            <td>◆コンソメ（顆粒タイプ）</td>
+            <td>小さじ1/2</td>
+        </tr>
+        <tr>
+            <td  bgcolor="#badcad">塩</td>
+            <td  bgcolor="#badcad">少々</td>
+        </tr>
+        <tr>
+            <td>こしょう</td>
+            <td>少々</td>
+        </tr>
+        <tr>
+            <td  bgcolor="#badcad">サラダ油</td>
+            <td  bgcolor="#badcad">大さじ1</td>
+        </tr>
+        </table>
+
+    <div class="howto">作り方</div>
+    <div class="howto1">
+         <p style="text-align:left">①<br>キャベツは3〜4cm角に切る。ボウルに卵を溶きほぐし、ぬるま湯、コンソメを混ぜる。<br><br>②<br>フライパンに油大さじ1/2を熱し、①の卵液を入れてふわっと炒めて取り出す。<br><br>③<br>フライパンに油大さじ1/2を熱し、①のキャベツを入れて炒め、◆を加えて炒める。②の卵を戻し入れ、塩・こしょうで調味する。</p>
+    </div>
+
+    <div class="energy">栄養情報（１人分）</div>
+    <div class="energy1">
+        <p>エネルギー　：161kcal<br>たんぱく質　：7.7g<br>塩分　：0.9g<br>野菜摂取量　：106g<br>※野菜摂取量はきのこ類・いも類を除く</p>
+    </div>
+
+    <div class="kouka">効果</div>
+        <div class="kouka1">
+            <p>【キャベツ】<br>・ビタミンC・食物繊維<br>→免疫力を高め、血液がどろどろになるのを防ぐ効果がある<br><br>【卵】<br>・コリン<br>→高血圧、高コレステロール血症、動脈硬化症、脂肪肝などの予防に効果がある</p>
+        </div>
+
+    <div class="sansyo">参照</div>
+        <div class="sansyo1">
+            <p>AJINOMOTO PARK<br><a href="https://x.gd/xTCSg" target="_blank" rel="noopener noreferrer">https://x.gd/xTCSg</a></p>
+        </div>
+    
+    <div class="under"></div>
+
+    <div class="background-top"></div>
+
+    <div id="nav-wrapper" class="nav-wrapper">
+    <div class="hamburger" id="js-hamburger">
+        <span class="hamburger__line hamburger__line--1"></span>
+        <span class="hamburger__line hamburger__line--2"></span>
+        <span class="hamburger__line hamburger__line--3"></span>
+    </div>
+    <nav class="sp-nav">
+        <ul>
+        <li onclick="location.href='home.html'">ホーム</li>
+        <li onclick="location.href='BMI.html'">BMI測定</li>
+        <li onclick="location.href='check.html'">生活習慣病チェックシート</li>
+        </ul>
+    </nav>
+    <div class="black-bg" id="js-black-bg"></div>
+    </div>
+    <button class="back" href="javascript:void(0)" onclick="history.back()">戻る</button>
+</body>
+</html>
